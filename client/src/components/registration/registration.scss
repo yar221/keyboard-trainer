@@ -1,0 +1,113 @@
+.registration, .login{
+    position: absolute;
+    top: calc(50% - 160px);
+    left: calc(50% - 160px);
+
+    &__body{
+        width: 320px;
+        height: 320px;
+        background-color: #D2CFE4;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    &__title{
+        font-size: 28px;
+        font-weight: 500;
+        background-color: #c9c5df;
+        padding: 5px 0;
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
+    &__form{
+        flex: 1 0 auto;
+        padding: 10px 15px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+
+        &__content{
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content{
+            &__item{
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .title{
+            font-size: 20px;
+            flex: 0 1 96.5px;
+            margin-right: 10px;
+        }
+
+        .input{
+            flex: 1 1 auto;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        &__email{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .email{
+            &__input{
+                
+            }
+        }
+
+        &__login{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login{
+            &__input{
+                
+            }
+        }
+
+        &__password{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .password{
+            &__input{
+                
+            }
+        }
+
+        &__submit{
+            width: fit-content;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif !important;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        &__changePage{
+            flex: 0 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
